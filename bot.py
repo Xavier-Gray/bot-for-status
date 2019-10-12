@@ -20,11 +20,11 @@ while True:
     nowdate = t.strftime("%d.%m.%Y")  # текущая дата
 
     on = vk.method("friends.getOnline")  # получаем список id друзей онлайн
-    onl = count(on)  # считаем кол-во элементов в списке
+    counted = len(on)  # считаем кол-во элементов в списке
     
     ch = vk.method("account.getBanned") # получаем список пользователей чс
     kch = count(ch) # считаем кол-во элементов в списке 
 
-    vk.method("status.set", {"text": nowtime + " ● " + nowdate + " ● " + "Друзей онлайн: " + str(onl) + " ● " + "Людей в чс: " + str(kch)})
+    vk.method("status.set", {"text": nowtime + " ● " + nowdate + " ● " + "Друзей онлайн: " + str(counted)})
 
     time.sleep(600)  # погружаем скрипт в «сон» на 30 секунд
