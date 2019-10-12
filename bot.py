@@ -23,8 +23,8 @@ while True:
     onl = count(on)  # считаем кол-во элементов в списке
     
     ch = vk.method("account.getBanned") # получаем список пользователей чс
-    ch = len(ch) # считаем кол-во элементов в списке 
+    kch = count(ch) # считаем кол-во элементов в списке 
 
-    vk.method("status.set", {"text": nowtime + " ● " + nowdate + " ● " + "Друзей онлайн: " + str(count) + " ● " + "Людей в чс: " + str(ch)})
+    vk.method("status.set", {"text": nowtime + " ● " + nowdate + " ● " + "Друзей онлайн: " + str(onl) + " ● " + "Людей в чс: " + str(kch)})
 
     time.sleep(600)  # погружаем скрипт в «сон» на 30 секунд
