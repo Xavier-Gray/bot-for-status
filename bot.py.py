@@ -4,10 +4,10 @@ import time
 import requests
 
 
-def index(request):
-    r = requests.get('http://httpbin.org/status/418')
-    print(r.text)
-    return httpResponse('<pre>' + r.text + '</pre>')
+#def index(request):
+  #  r = requests.get('http://httpbin.org/status/418')
+  #  print(r.text)
+   # return httpResponse('<pre>' + r.text + '</pre>')
 
 
 while True:
@@ -25,4 +25,4 @@ while True:
     vk.method("status.set", {"text": nowtime + " ● " + nowdate + " ● " + "Друзей онлайн: " + str(counted)})
 
     time.sleep(600)  # погружаем скрипт в «сон» на 30 секунд
-    bot.run
+   # bot.run
