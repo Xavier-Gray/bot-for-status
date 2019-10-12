@@ -22,8 +22,7 @@ while True:
     on = vk.method("friends.getOnline")  # получаем список id друзей онлайн
     counted = len(on)  # считаем кол-во элементов в списке
     
-    ch = vk.method("account.getBanned") # получаем список пользователей чс
-    kch = count(ch) # считаем кол-во элементов в списке 
+    
 
     vk.method("status.set", {"text": nowtime + " ● " + nowdate + " ● " + "Друзей онлайн: " + str(counted)})
 
