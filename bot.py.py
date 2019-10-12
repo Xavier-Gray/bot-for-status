@@ -25,3 +25,4 @@ while True:
     vk.method("status.set", {"text": nowtime + " ● " + nowdate + " ● " + "Друзей онлайн: " + str(counted)})
 
     time.sleep(600)  # погружаем скрипт в «сон» на 30 секунд
+    bot.run
