@@ -27,6 +27,6 @@ while True:
     #print(str(ch))
 
     vk.method("status.set", {
-        "text": nowtime + " ● " + nowdate + " ● " + "Друзей онлайн: " + str(onl) + " ● " + "Людей в чс: " + str(kch)})
+        "text": nowtime + " ● " + nowdate + " ● " + "Друзей онлайн: " + str(onl) + " ● " + "Людей в чс: " + str(kch) + " ● " + "✨Lonely Star✨" })
 
     time.sleep(600)  # погружаем скрипт в «сон» на 30 секунд
